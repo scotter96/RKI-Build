@@ -23831,8 +23831,8 @@ cr.behaviors.Pathfinding = function(runtime)
 	behaviorProto.exps = new Exps();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Browser,
 	cr.plugins_.Audio,
+	cr.plugins_.Browser,
 	cr.plugins_.Keyboard,
 	cr.plugins_.LocalStorage,
 	cr.plugins_.sliderbar,
@@ -23852,15 +23852,16 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.Destroy,
 	cr.system_object.prototype.acts.NextPrevLayout,
 	cr.plugins_.Browser.prototype.cnds.OnBackButton,
+	cr.plugins_.Keyboard.prototype.cnds.OnKey,
 	cr.system_object.prototype.acts.SetVar,
 	cr.system_object.prototype.acts.RestartLayout,
 	cr.plugins_.Touch.prototype.cnds.OnTouchObject,
 	cr.system_object.prototype.acts.AddVar,
 	cr.plugins_.Sprite.prototype.acts.StopAnim,
 	cr.system_object.prototype.cnds.CompareVar,
-	cr.plugins_.Text.prototype.acts.Destroy,
 	cr.plugins_.Sprite.prototype.acts.SetPos,
-	cr.plugins_.Keyboard.prototype.cnds.OnKey,
+	cr.plugins_.Sprite.prototype.exps.X,
+	cr.plugins_.Sprite.prototype.exps.Y,
 	cr.plugins_.Sprite.prototype.cnds.IsOverlapping,
 	cr.plugins_.Touch.prototype.cnds.OnNthTouchStart,
 	cr.behaviors.Pathfinding.prototype.acts.FindPath,
@@ -23878,14 +23879,14 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.sliderbar.prototype.exps.Value,
 	cr.plugins_.sliderbar.prototype.cnds.CompareValue,
 	cr.plugins_.Audio.prototype.acts.SetMuted,
-	cr.system_object.prototype.exps.round,
-	cr.system_object.prototype.exps.random,
+	cr.plugins_.Audio.prototype.acts.Play,
+	cr.plugins_.Sprite.prototype.acts.SetVisible,
 	cr.plugins_.Text.prototype.cnds.PickByUID,
-	cr.plugins_.Text.prototype.acts.SetFontSize,
+	cr.plugins_.Sprite.prototype.acts.SetAnim,
+	cr.system_object.prototype.cnds.Every,
 	cr.system_object.prototype.acts.SubVar,
+	cr.plugins_.Text.prototype.acts.Destroy,
+	cr.plugins_.Sprite.prototype.acts.MoveToLayer,
 	cr.plugins_.Sprite.prototype.exps.UID,
-	cr.plugins_.Touch.prototype.cnds.IsInTouch,
-	cr.plugins_.Sprite.prototype.exps.X,
-	cr.plugins_.Sprite.prototype.exps.Y
+	cr.plugins_.Touch.prototype.cnds.IsInTouch
 ];};
-
