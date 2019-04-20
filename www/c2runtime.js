@@ -23833,11 +23833,11 @@ cr.behaviors.Pathfinding = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Audio,
 	cr.plugins_.Browser,
-	cr.plugins_.LocalStorage,
 	cr.plugins_.Keyboard,
-	cr.plugins_.Touch,
-	cr.plugins_.Sprite,
+	cr.plugins_.LocalStorage,
 	cr.plugins_.Text,
+	cr.plugins_.Sprite,
+	cr.plugins_.Touch,
 	cr.plugins_.sliderbar,
 	cr.behaviors.Pathfinding,
 	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
@@ -23888,6 +23888,8 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.IsVisible,
 	cr.plugins_.Sprite.prototype.acts.MoveToLayer,
 	cr.system_object.prototype.exps.random,
+	cr.system_object.prototype.cnds.While,
 	cr.plugins_.Sprite.prototype.exps.UID,
-	cr.plugins_.Touch.prototype.cnds.IsInTouch
+	cr.plugins_.Touch.prototype.cnds.IsInTouch,
+	cr.system_object.prototype.cnds.EveryTick
 ];};
